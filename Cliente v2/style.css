@@ -22,7 +22,6 @@ body{
   display: flex;
   border: 5px solid black;
   height: 700px;
-  
 }
 
 #Arriba{
@@ -33,7 +32,6 @@ body{
   width: 100%;
   line-height: 300px;
   color: blue;
-  
 }
 
 #Titulo{
@@ -51,26 +49,31 @@ body{
 
 aside{
   float: left;
-  width: 30%;
+  width: 35%;
   border-right: 5px solid black;
+  margin: 0px;
 }
 
 #Termometro{
   width: 70%;
-  float: left;
   height: 900px;
 }
 
 footer{
- 
+  width: 1100px;
+  display: flex;
 }
 
 #Estado{
   background-color: red;
+  margin: 0px;
+  padding: 15px;
+  width: 60px;
+  border-radius: 5px;
+  border: none;
 }
 
 #btnGuardar {
-  width: 50%;
   margin: 15px;
   text-decoration:none;
   font-weight:200;
@@ -81,16 +84,31 @@ footer{
   padding-left:20px;
   padding-right:20px;
   background-color:#005BBB;
+  border: none;
+  border-radius: 5px;
 }
 
-
+.btnConexion{
+  margin: 15px;
+  text-decoration:none;
+  font-weight:200;
+  font-size:20px;
+  color:#ffffff;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+  padding-right:20px;
+  background-color:#005BBB;
+  border: none;
+  border-radius: 5px;
+}
 
 .Termometro {
         position: relative;
         width: 50px;
         height: 150px;
         background-color: #f5f5f5;
-        border-radius: 10px;
+        border-radius: 5px;
         margin: 50px auto;
       }
       .Termometro:before {
@@ -117,3 +135,19 @@ footer{
         font-size: 24px;
         margin-top: 30px;
       }
+
+.botones{
+  display: inline;
+}
+
+input[type="text"]{
+  border-radius: 5px;
+  padding: 5px;
+  border-color:#005BBB;
+}
+
+input[type="number"]{
+  border-radius: 5px;
+  padding: 5px;
+  border-color:#005BBB;
+}
