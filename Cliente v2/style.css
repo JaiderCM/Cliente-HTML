@@ -1,11 +1,13 @@
 *{
   margin: 0px auto;
   font-family: Helvetica, sans-serif;
+  color: #c9c9c9;
 }
 
 body{
   background: rgb(0, 0, 0);
   background: radial-gradient(circle at center, rgba(14, 44, 64, 0.5) 23%, rgba(26, 74, 90, 0.5), rgba(20, 141, 141, 0.5), rgba(193, 225, 167, 0.5), rgba(239, 188, 117, 0.5) 100%);
+  background: url(Fondo3.jpg);
 }
 
 .espacio{
@@ -22,10 +24,10 @@ body{
   display: flex;
   border: 5px solid black;
   height: 700px;
+  border-radius: 10px;
 }
 
 #Arriba{
-  float: left;
   background: url('Cabecera.jpg');
   background-size: cover;
   height: 200px;
@@ -39,7 +41,7 @@ body{
   height: 100px;
   line-height: 100px;
   text-align: center;
-  font-size: 75px;
+  font-size: 70px;
 }
 
 .vista{
@@ -54,14 +56,36 @@ aside{
   margin: 0px;
 }
 
-#Termometro{
+#Termo{
+  margin-top: 0px;
+  text-align: left;
   width: 70%;
-  height: 900px;
+  height: auto;
+  line-height: 15px;
+  
 }
 
-footer{
+.temperature{
+  color: black;
+}
+
+#Info h3{
+  margin: 15px 20px 10px 13px;
+  text-align: left;
+}
+
+p{
+  margin: 13px;
+  line-height: 0px;
+}
+
+ol{
+  line-height: 35px;
+}
+
+#Info{
+  margin-top: 20px;
   width: 1100px;
-  display: flex;
 }
 
 #Estado{
@@ -88,6 +112,11 @@ footer{
   border-radius: 5px;
 }
 
+#btnGuardar:hover{
+  background-color: #ccc;
+  color: black;
+}
+
 .btnConexion{
   margin: 15px;
   text-decoration:none;
@@ -101,6 +130,11 @@ footer{
   background-color:#005BBB;
   border: none;
   border-radius: 5px;
+}
+
+.btnConexion:hover{
+  background-color: #ccc;
+  color: black;
 }
 
 .Termometro {
@@ -137,17 +171,48 @@ footer{
       }
 
 .botones{
-  display: inline;
+  display: inline-flex;
+  align-items: center;
 }
 
 input[type="text"]{
   border-radius: 5px;
   padding: 5px;
-  border-color:#005BBB;
+  border-color:black;
+  color: black;
 }
 
 input[type="number"]{
   border-radius: 5px;
   padding: 5px;
-  border-color:#005BBB;
+  border-color:black;
+  color: black;
 }
+
+footer{
+  color: white;
+  width: 100%;
+  height: 60px;
+  background-color: gray;
+  line-height: 60px;
+  text-align: center;
+}
+
+/*
+@media (max-width:1100px){
+  .main{
+      display: list-item;
+      align-items: center;
+      justify-content: center;
+  }
+  .vista{
+      height: 500px;
+      margin: auto;
+  }
+
+  p{
+      margin-bottom: 80px;
+  }
+}  
+*/
+
