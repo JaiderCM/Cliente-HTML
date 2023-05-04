@@ -62,7 +62,8 @@ aside{
   width: 70%;
   height: auto;
   line-height: 15px;
-  
+  display: grid;
+  align-items: stretch;
 }
 
 .temperature{
@@ -198,6 +199,10 @@ footer{
   text-align: center;
 }
 
+#temperatura{
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+}
 #termometro {
   width: 30px;
   height: 200px;
