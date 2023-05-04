@@ -25,3 +25,11 @@ function guardarInfo(){
 
 }
 
+const input = document.getElementById("temperatura");
+const indicador = document.getElementById("indicador");
+
+input.addEventListener("input", () => {
+  const value = input.value;
+  const height = value * 2;
+  indicador.style.height = height + "px";
+});
