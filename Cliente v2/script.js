@@ -13,6 +13,9 @@ function mostrarValores(){
 mostrarValores();
 */
 
+const input = document.getElementById("temperatura");
+const indicador = document.getElementById("indicador");
+
 let nombreTer, interMenor, interMayor, escala;
 
 function guardarInfo(){
@@ -23,13 +26,21 @@ function guardarInfo(){
 
     document.getElementById("mostrarNom").value = nombreTer;
 
+    input.setAttribute("min", interMenor);
+    input.setAttribute("max", interMayor);
+    input.setAttribute("step", escala);
+
 }
 
-const input = document.getElementById("temperatura");
-const indicador = document.getElementById("indicador");
-
 input.addEventListener("input", () => {
+  document.getElementById("grados").value = input.value;
   const value = input.value;
-  const height = value * 2;
-  indicador.style.height = height + "px";
+  indicador.style.height = value + "px";
 });
+
+function clear(){
+  document.getElementById("nombreTer").value = "";
+  document.getElementById("interMenor").value = "";
+  document.getElementById("interMayor").value = "";
+  document.getElementById("escala").value = "";
+}
